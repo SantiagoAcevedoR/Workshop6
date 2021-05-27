@@ -1,23 +1,18 @@
-package edu.unbosque.WebServicesTutorial.jpa.entities;
+package resources.pojos;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "Vet")
+
 public class Vet {
 
-    //REVISAR ENTITY FK,PK
-    @Id
-    @JoinColumn(name = "username")
+
     private String username;
 
-    @Column(name = "name")
+
     private String name;
 
-    @Column(name = "address")
     private String address;
 
-    @Column(name = "neighborhood")
     private String neighborhood;
 
     public Vet() {

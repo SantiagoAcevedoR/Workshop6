@@ -1,17 +1,13 @@
-package edu.unbosque.WebServicesTutorial.jpa.entities;
+package resources.pojos;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "Official")
+
 public class Official {
 
-    //REVISAR ENTITY FK,PK
-    @Id
-    @JoinColumn(name = "username")
+
     private String username;
 
-    @Column(name = "name", nullable = false)
     private String name;
 
 

@@ -1,25 +1,20 @@
-package edu.unbosque.WebServicesTutorial.jpa.entities;
+package resources.pojos;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table(name = "UserApp")
+
+
 public class UserApp {
 
-    @Id
-    @Column(name = "username")
+
     private String username;
 
-    @Column(name = "password", nullable = false)
+
     private String password;
 
-    @Column(name = "email", nullable = false)
+
     private String email;
 
-    @Column(name = "role", nullable = false)
+
     private String role;
 
     public UserApp() {
