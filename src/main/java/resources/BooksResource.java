@@ -29,7 +29,6 @@ public class BooksResource {
     @Produces(MediaType.APPLICATION_JSON)
     public Response create(@PathParam("authorId") Integer authorId, Book book) {
 
-        book.setBookId(3);
 
         return Response.status(Response.Status.CREATED)
                 .entity(book)
