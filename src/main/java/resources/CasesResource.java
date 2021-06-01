@@ -1,6 +1,5 @@
 package resources;
 
-import resources.pojos.Book;
 import resources.pojos.Case;
 
 import javax.ws.rs.*;
