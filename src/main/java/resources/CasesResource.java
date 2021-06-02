@@ -17,13 +17,15 @@ public class CasesResource {
     public Response list(@PathParam("pet_id") Integer petId) {
 
         List<Case> cases = new ArrayList<Case>();
-        cases.add(new Case(1, "11/12/2021", "Perdida","Mira la reina del flow", petId));
-        cases.add(new Case(2, "12/11/2012", "Robo","Mirax2", petId));
+        cases.add(new Case(1, "11/12/2021", "Perdida", "Mira la reina del flow", petId));
+        cases.add(new Case(2, "12/11/2012", "Robo", "Mirax2", petId));
 
         return Response.ok()
                 .entity(cases)
                 .build();
     }
+
+
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
