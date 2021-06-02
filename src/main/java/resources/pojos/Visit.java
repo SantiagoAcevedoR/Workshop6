@@ -1,5 +1,8 @@
 package resources.pojos;
 
+/**
+ * Creating Pojo Visit with constructor and Getters and Setters
+ */
 public class Visit {
 
     private int visit_id;
@@ -9,9 +12,22 @@ public class Visit {
     private int vet_id;
     private int pet_id;
 
+    /**
+     * Creating default constructor
+     */
     public Visit() {
     }
 
+    /**
+     * Creating an specific constructor
+     *
+     * @param visit_id    the id that was created by the program. visit_id!=null , visit_id!=" "
+     * @param created_at  the date that was created the visit. created_at !=null, created_at visit_id!=" "
+     * @param type        is the type of the visit. type!=null , type visit_id!=" "
+     * @param description the qualities that has the visit . description!=null, description visit_id!=" "
+     * @param vet_id      the id that has the vet. vet_id !=null, vet_id visit_id!=" "
+     * @param pet_id      the id that has the pet. pet_id!=null, pet_id visit_id!=" "
+     */
     public Visit(int visit_id, String created_at, String type, String description, int vet_id, int pet_id) {
         this.visit_id = visit_id;
         this.created_at = created_at;

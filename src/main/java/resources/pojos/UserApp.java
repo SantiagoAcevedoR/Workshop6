@@ -1,6 +1,8 @@
 package resources.pojos;
 
-
+/**
+ * Creating Pojo UserApp with constructor and Getters and Setters
+ */
 
 
 public class UserApp {
@@ -17,9 +19,19 @@ public class UserApp {
 
     private String role;
 
+    /**
+     * Creating default constructor
+     */
     public UserApp() {
     }
 
+    /**
+     * Creating an specific constructor
+     * @param username is the name that was created by the program . username!= null, username!= " "
+     * @param password is the key that has the user that open the program. password != null, username!=" "
+     * @param email is the @ that has the user. email != null, email != " "
+     * @param role is the role that has de user . role != null, role != " "
+     */
     public UserApp(String username, String password, String email, String role) {
         this.username = username;
         this.password = password;
@@ -59,6 +71,10 @@ public class UserApp {
         this.role = role;
     }
 
+    /**
+     * Creating an usserAp
+     * @return the usser Ap
+     */
     @Override
     public String toString() {
         return "UserApp{" +

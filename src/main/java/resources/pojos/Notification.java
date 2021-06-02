@@ -1,5 +1,9 @@
 package resources.pojos;
 
+/**
+ * Creating Notification Pojo Notification with Getters and Setters
+ */
+
 public class Notification {
 
     private String text;

@@ -2,6 +2,9 @@ package resources.pojos;
 
 import javax.persistence.*;
 
+/**
+ * Creating Pojo vet with constructor and Getters and Setters
+ */
 
 public class Vet {
 
@@ -15,8 +18,19 @@ public class Vet {
 
     private String neighborhood;
 
+    /**
+     * Creating default constructor
+     */
     public Vet() {
     }
+
+    /**
+     * Creating an specific constructor
+     * @param username is the name that was created by the program . username!= null, username!= " "
+     * @param name is the name for the vet. name != null, name !=" "
+     * @param address is the location for the house. address!= null, address
+     * @param neighborhood where the vet is located. neighborhood != null ,neighborhood != " "
+     */
 
     public Vet(String username, String name, String address, String neighborhood) {
         this.username = username;

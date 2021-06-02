@@ -12,8 +12,18 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Creating the resource of owner with @Path, @Get notation
+ */
 @Path("/owners/list/{param}")
 public class OwnersListResource {
+    /**
+     * This operation of Restful get a list of any owner
+     * <b> pre </b> The Owner need to be created and initialized ( is not null) <br>
+     * <b> post </b> The total of owner was obtained   <br>
+     * @param param the parameters that has the owner. param!=null , param!=" "
+     * @return the list of owner.
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response list(@PathParam("param") String param) {

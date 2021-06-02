@@ -11,9 +11,17 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Creating the resource of casesTotal with @Path, @Get and @Param notation
+ */
 @Path("/cases/{param}")
 public class CasesTotalResource {
 
+    /**
+     * This operation of Restful obtain the total of the cases
+     * @param param the parameters that has the case. param!=null , param!=" "
+     * @return the total of the cases.
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response listByType(@PathParam("param") String param) {

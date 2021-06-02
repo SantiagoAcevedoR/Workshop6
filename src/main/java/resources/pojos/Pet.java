@@ -1,5 +1,8 @@
 package resources.pojos;
 
+/**
+ * Creating the Pojo Pet with constructors and Getters and Setters
+ */
 public class Pet {
     private int petId;
     private String microchip;
@@ -11,9 +14,25 @@ public class Pet {
     private String picture;
     private int owner_id;
 
+    /**
+     * Creating default constructor
+     */
     public Pet() {
     }
 
+    /**
+     * Creating an specific constructor
+     *
+     * @param petId     is the id for the pet that we choose . petId !=null, petId !=" "
+     * @param microchip is the identification that we put in the pet.
+     * @param name      is the reference for the pet
+     * @param species   is the specie of the pet. species !=null, species !=" "
+     * @param race      is the race of the pet. race !=null , race != " "
+     * @param size      is the size of the pet. size!=null, size!=" "
+     * @param sex       is the sex od the pet . sex!=null, sex!= " "
+     * @param picture   is the image for the pet.
+     * @param owner_id  is the id for the owner.
+     */
     public Pet(int petId, String microchip, String name, String species, String race, String size, String sex, String picture, int owner_id) {
         this.petId = petId;
         this.microchip = microchip;
@@ -24,7 +43,9 @@ public class Pet {
         this.sex = sex;
         this.picture = picture;
         this.owner_id = owner_id;
+
     }
+
 
     public int getPetId() {
         return petId;
@@ -97,4 +118,5 @@ public class Pet {
     public void setOwner_id(int owner_id) {
         this.owner_id = owner_id;
     }
+
 }
