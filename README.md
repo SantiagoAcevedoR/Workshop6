@@ -1,5 +1,9 @@
 🥇# WORKSHOP6 🥇
-Developed by Santiago Porras 🚴‍♂️, Santiago Acevedo 👽, Felipe Ladino 🎱
+
+Developed by:
+Santiago Acevedo
+Felipe Ladino
+Santiago Porras
 
 Dificultades: 😞
 El principal inconveniente estuvo en la carga de imágenes por medio de postman, ya que no se encontró la información precisa y en algunos intentos encontramos errores desconocidos. REVISAR ⚠️
