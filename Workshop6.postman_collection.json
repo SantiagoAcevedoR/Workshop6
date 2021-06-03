@@ -1,0 +1,668 @@
+{
+	"info": {
+		"_postman_id": "fbdd11b0-98fd-4708-9aab-08a5d3f42092",
+		"name": "Workshop6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Owner Requests",
+			"item": [
+				{
+					"name": "Actualizar propietario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " \r\n    {\r\n        \"username\": \"Felipe\",\r\n        \"personId\": 3,\r\n        \"name\": \"Felipe\",\r\n        \"address\": \"cra 60\",\r\n        \"neighborhood\": \"bosa\"\r\n       \r\n            \r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por parametros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/list/FelipeLg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"list",
+								"FelipeLg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar propietario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear propietario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"username\": \"Felipe\",\r\n        \"personId\": 3,\r\n        \"name\": \"Felipe\",\r\n        \"address\": \"cra 60\",\r\n        \"neighborhood\": \"bosa\"\r\n                 \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener total",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/Bosa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"Bosa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pet Requests",
+			"item": [
+				{
+					"name": "Listar por parametros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/pets/list/Perro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"pets",
+								"list",
+								"Perro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar mascota",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"petId\": 3,\r\n        \"microchip\": \"Ab345654\",\r\n        \"name\": \"gachi\",\r\n        \"species\": \"Perro\",\r\n        \"race\": \"Golden\",\r\n        \"size\": \"Pequeño\",\r\n        \"sex\": \"Macho\",\r\n        \"picture\": \"pp.jpg\",\r\n        \"owner_id\": 1,\r\n        \"sterilized\": \"yes\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/1/pets/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"1",
+								"pets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar mascota",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/1/pets/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"1",
+								"pets",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear mascota",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"petId\": 1,\r\n        \"microchip\": \"bg3457787\",\r\n        \"name\": \"fuchi\",\r\n        \"species\": \"Gato\",\r\n        \"race\": \"Persa\",\r\n        \"size\": \"Peque\",\r\n        \"sex\": \"Macho\",\r\n        \"picture\": \"gg.jpg\",\r\n        \"owner_id\": 1,\r\n        \"sterilized\": \"no\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/owners/1/pets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"owners",
+								"1",
+								"pets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener total",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/pets/Grande",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"pets",
+								"Grande"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Visit Requests",
+			"item": [
+				{
+					"name": "Obtener total",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/visits/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"visits",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar visitas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets&pets/1&1/visits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets&pets",
+								"1&1",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear visita",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"visit_id\": 1,\r\n        \"created_at\": \"11/07/2021\",\r\n        \"type\": \"Cuidado\",\r\n        \"description\": \"Dermatitis\",\r\n        \"vet_id\": 1,\r\n        \"pet_id\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets&pets/1&1/visits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets&pets",
+								"1&1",
+								"visits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar visita",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"visit_id\": 4,\r\n        \"created_at\": \"03/06/2021\",\r\n        \"type\": \"Baño\",\r\n        \"description\": \"Dermatitis\",\r\n        \"vet_id\": 1,\r\n        \"pet_id\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets&pets/1&1/visits/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets&pets",
+								"1&1",
+								"visits",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar visita",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets&pets/1&1/visits/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets&pets",
+								"1&1",
+								"visits",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Case Requests",
+			"item": [
+				{
+					"name": "Actualizar caso",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"case_id\": 1,\r\n        \"created_at\": \"11/11/2020\",\r\n        \"type\": \"Perdida\",\r\n        \"description\": \"asereje\",\r\n        \"pet_id\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/pets/1/cases/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"pets",
+								"1",
+								"cases",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar caso",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/pets/1/cases/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"pets",
+								"1",
+								"cases",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear caso",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"case_id\": 4,\r\n        \"created_at\": \"11/05/2021\",\r\n        \"type\": \"Robo\",\r\n        \"description\": \"Se fue corriendo\",\r\n        \"pet_id\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/pets/2/cases",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"pets",
+								"2",
+								"cases"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar casos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/pets/1/cases",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"pets",
+								"1",
+								"cases"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener total",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/cases/Perdida",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"cases",
+								"Perdida"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vet Requests",
+			"item": [
+				{
+					"name": "Listar veterinario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear veterinario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"username\": \"Marta\",\r\n        \"name\": \"martica\",\r\n        \"address\": \"cra 60\",\r\n        \"neighborhood\": \"bosa\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar veterinario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"username\": \"Rogi3\",\r\n        \"name\": \"Rogelio\",\r\n        \"address\": \"cra 60\",\r\n        \"neighborhood\": \"Bosa\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets/rogelio1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets",
+								"rogelio1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar veterinario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/WebServicesTutorial-1.0-SNAPSHOT/api/vets/bailarina77",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"WebServicesTutorial-1.0-SNAPSHOT",
+								"api",
+								"vets",
+								"bailarina77"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
