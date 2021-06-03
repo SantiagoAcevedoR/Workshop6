@@ -35,6 +35,7 @@ public class Pet {
      * @param sex       is the sex od the pet . sex!=null, sex!= " "
      * @param picture   is the image for the pet.
      * @param owner_id  is the id for the owner.
+     * @param sterilized is the condition if the pet is sterilized. sterilized!=null, sterilized !=" "
      */
     public Pet(int petId, String microchip, String name, String species, String race, String size, String sex, String picture, int owner_id, String sterilized) {
         this.petId = petId;
