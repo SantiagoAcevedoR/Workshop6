@@ -12,7 +12,6 @@ import javax.ws.rs.core.Response;
 @Path("/pets/{pet_id}/cases/{id}")
 public class CaseResource {
 
-
     /**
      * This operation of Restful modify any case
      * <b> pre </b> The pet need to be created and initialized ( is not null) <br>
@@ -37,7 +36,7 @@ public class CaseResource {
      * <b> post </b> The case was deleted <br>
      * @param authorId the id of the author. authorId!=null, authorId!=" "
      * @param id is the id of the case. id!=null, id!=" "
-     * @return 204 not found
+     * @return 204 no Content
      */
     @DELETE
     public Response delete(@PathParam("pet_id") Integer authorId, @PathParam("id") Integer id) {

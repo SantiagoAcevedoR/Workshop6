@@ -10,10 +10,19 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Creating the resource of visit with @Path, @Get and @Post notation
+ */
 @Path("/vets&pets/{vet_id}&{pet_id}/visits")
+
 public class VisitsResource {
 
+    /**
+     * This operation of Restful  list visits
+     * @param vet_id the id of the vet.vet_id!=null, vet_id!=" "
+     * @param pet_id the id of the pet. pet_id!=null, pet_id!=" "
+     * @return list of visits
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response list(@PathParam("vet_id") Integer vet_id, @PathParam("pet_id") Integer pet_id) {

@@ -8,9 +8,18 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Creating the resource of case with @Path, @Post notation
+ */
 @Path("/owners/{owner_id}/pets")
 public class PetsResource {
 
+    /**
+     * This operation of Restful modify any case
+     * @param ownerId is the Id that identify the owner, ownerId!=null
+     * @param pet is the object. pet!=null, pet!=" "
+     * @return the pet.
+     */
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)

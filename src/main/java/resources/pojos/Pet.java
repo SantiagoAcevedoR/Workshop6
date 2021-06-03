@@ -13,12 +13,15 @@ public class Pet {
     private String sex;
     private String picture;
     private int owner_id;
+    private String sterilized;
 
     /**
      * Creating default constructor
      */
     public Pet() {
     }
+
+
 
     /**
      * Creating an specific constructor
@@ -33,7 +36,7 @@ public class Pet {
      * @param picture   is the image for the pet.
      * @param owner_id  is the id for the owner.
      */
-    public Pet(int petId, String microchip, String name, String species, String race, String size, String sex, String picture, int owner_id) {
+    public Pet(int petId, String microchip, String name, String species, String race, String size, String sex, String picture, int owner_id, String sterilized) {
         this.petId = petId;
         this.microchip = microchip;
         this.name = name;
@@ -43,7 +46,7 @@ public class Pet {
         this.sex = sex;
         this.picture = picture;
         this.owner_id = owner_id;
-
+        this.sterilized = sterilized;
     }
 
 
@@ -119,4 +122,11 @@ public class Pet {
         this.owner_id = owner_id;
     }
 
+    public String getSterilized() {
+        return sterilized;
+    }
+
+    public void setSterilized(String sterilized) {
+        this.sterilized = sterilized;
+    }
 }

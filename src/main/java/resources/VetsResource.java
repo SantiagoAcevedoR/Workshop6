@@ -8,10 +8,17 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Creating the resource of vet with @Path, @Get notation
+ */
 @Path("/vets")
+
 public class VetsResource {
 
+    /**
+     * This operation of Restful list vets
+     * @return list vets
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response list() {

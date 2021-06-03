@@ -13,9 +13,17 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Creating the resource of case with @Path, @Get notation
+ */
 @Path("/pets/list/{param}")
 public class PetsListResource {
 
+    /**
+     * This operation of Restful list pets
+     * @param param are the parameters for the search, it can be anything. param!=null
+     * @return the list of pets
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response list(@PathParam("param") String param) {
@@ -23,8 +31,8 @@ public class PetsListResource {
         List<Pet> pets = new ArrayList<>();
         List<Pet> petsParam = new ArrayList<>();
         List<Pet> pets1 = new ArrayList<>();
-        Pet pet1 = new Pet(1, "Ab1", "pepe", "Perro", "Golden", "Grande", "Macho", "pp.jpg", 1);
-        Pet pet2 = new Pet(2, "Ab2", "Elpepe", "Perro", "Persa", "Chiquito", "Hembra", "Lpp.jpg", 2);
+        Pet pet1 = new Pet(1, "Ab1", "pepe", "Perro", "Golden", "Grande", "Macho", "pp.jpg", 1,"yes");
+        Pet pet2 = new Pet(2, "Ab2", "Elpepe", "Perro", "Persa", "Chiquito", "Hembra", "Lpp.jpg", 2,"yes");
 
         pets.add(pet1);
         pets.add(pet2);

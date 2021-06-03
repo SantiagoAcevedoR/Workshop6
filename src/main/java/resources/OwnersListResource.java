@@ -30,11 +30,11 @@ public class OwnersListResource {
         List<Owner> owners = new ArrayList<>();
         List<Owner> ownersParam = new ArrayList<>();
         List<Pet> pets1 = new ArrayList<>();
-        pets1.add(new Pet(1, "Ab1", "pepe", "Perro", "Golden", "Grande", "Macho", "pp.jpg", 1));
-        pets1.add(new Pet(2, "Ab2", "Pablito", "Gato", "Criollo", "Pequenio", "Macho", "Pablito.jpg", 1));
+        pets1.add(new Pet(1, "Ab1", "pepe", "Perro", "Golden", "Grande", "Macho", "pp.jpg", 1,"yes"));
+        pets1.add(new Pet(2, "Ab2", "Pablito", "Gato", "Criollo", "Pequenio", "Macho", "Pablito.jpg", 1,"yes"));
 
         List<Pet> pets2 = new ArrayList<Pet>();
-        pets2.add(new Pet(3, "Bb1", "Gardfield", "Gato", "Mixto", "Grande", "Macho", "geirfield.jpg", 2));
+        pets2.add(new Pet(3, "Bb1", "Gardfield", "Gato", "Mixto", "Grande", "Macho", "geirfield.jpg", 2,"no"));
         owners.add(new Owner("FelipeLg", 1, "Felipe Ladino", "cra 60", "bosa", pets1));
         owners.add(new Owner("Porrasi2", 2, "Santiago Porras", "cll 2", "cotayork", pets2));
 

@@ -11,9 +11,17 @@ import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Creating the resource of visit with @Path, @Get and @Post notation
+ */
 @Path("/visits/{param}")
 public class VisitsTotalResource {
 
+    /**
+     * This operation of Restful total of list of visit
+     * @param param are the parameters for the search, it can be anything. param!=null
+     * @return the total of visits
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response list(@PathParam("param") String param) {
