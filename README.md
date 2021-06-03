@@ -7,7 +7,7 @@ El principal inconveniente estuvo en la carga de imágenes por medio de postman,
 Oportunidades: ✔️ ✔️
 Sin tener en cuenta la carga de la imagen, el taller se desarrolló satisfactoriamente y sin mayores problemas, fue importante evaluar constantemente cada método en postman ya que se tenía siempre una versión correcta del código.
 
-Aprendimos también a exportar las colecciones de postman y al elaborarla, se volvieron a evaluar todos los métodos y funcionan bien. 📗
+Aprendimos también a exportar las colecciones de postman y al elaborarlas, se volvieron a evaluar todos los métodos y funcionan bien. 📗
 
 Pendiente: 🚨
 Investigar cargar y manejar las imagenes por medio de postman
