@@ -2,7 +2,7 @@
 
 Developed by:
 Santiago Acevedo,  
-Felipe Ladino,  
+Omar Felipe Ladino,  
 Santiago Porras,  
 
 Dificultades: 😞
