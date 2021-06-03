@@ -24,7 +24,7 @@ public class PetsListResource {
         List<Pet> petsParam = new ArrayList<>();
         List<Pet> pets1 = new ArrayList<>();
         Pet pet1 = new Pet(1, "Ab1", "pepe", "Perro", "Golden", "Grande", "Macho", "pp.jpg", 1);
-        Pet pet2 = new Pet(2, "Ab2", "Elpepe", "GATO", "Persa", "Chiquito", "Hembra", "Lpp.jpg", 2);
+        Pet pet2 = new Pet(2, "Ab2", "Elpepe", "Perro", "Persa", "Chiquito", "Hembra", "Lpp.jpg", 2);
 
         pets.add(pet1);
         pets.add(pet2);

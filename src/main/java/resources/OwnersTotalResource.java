@@ -35,8 +35,8 @@ public class OwnersTotalResource {
 
         ArrayList<Pet> pets2 = new ArrayList<Pet>();
         pets2.add(new Pet(3, "Bb1", "Gardfield", "Gato", "Mixto", "Grande", "Macho", "geirfield.jpg", 2));
-        owners.add(new Owner("FelipeLg", 1, "Felipe Ladino", "cra 60", "bosa", pets1));
-        owners.add(new Owner("Porrasi2", 2, "Santiago Porras", "cll 2", "cotayork", pets2));
+        owners.add(new Owner("FelipeLg", 1, "Felipe Ladino", "cra 60", "Bosa", pets1));
+        owners.add(new Owner("Porrasi2", 2, "Santiago Porras", "cll 2", "Bosa", pets2));
 
         for (int i = 0; i < owners.size(); i++) {
             if (param.equals(owners.get(i).getNeighborhood())) {
